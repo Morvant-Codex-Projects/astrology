@@ -1,5 +1,5 @@
 html{
-    
+    background-color: rgb(20, 33, 61);
 }
 
 
@@ -10,4 +10,12 @@ form {
     padding: 200px;
     border: solid 5px;
     margin: auto 0;
+    color: rgb(252, 163, 17);
 }
+
+
+nav {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
