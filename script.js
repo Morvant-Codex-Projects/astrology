@@ -1,5 +1,18 @@
 console.log("Hello")
 
+function birthdaySubmitHandler(event) {
+    event.preventDefault();
+
+    console.log(event.target.birthday.value);
+
+const today = new Date(event.target.birthday.value);
+//returns a new date Object with the requested date/time attached
+
+const month = today.getMonth();
+//returns the month from 0-11
+
+const day = today.getDate();
+//returns the day of the month(from 0-31)
 
 if (Date >= 0/21 && Date <= 04/19) {
     console.log ("Aries");
@@ -26,5 +39,30 @@ if (Date >= 0/21 && Date <= 04/19) {
 }  else if (Date >= 01/20 && Date <= 02/18) {
     console.log("Pisces")
 }
+
+
+
+
+console.log("Month:", month, "Day:", day) ;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
