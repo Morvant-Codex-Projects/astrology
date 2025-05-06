@@ -1,7 +1,7 @@
 console.log("Hello")
 
 
-if (Date >= 03/21 && Date <= 04/19) {
+if (Date >= 0/21 && Date <= 04/19) {
     console.log ("Aries");
 } else if (Date >= 4/20 && Date <= 05/20) {
     console.log("Taurus");
