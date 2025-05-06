@@ -14,30 +14,32 @@ const month = today.getMonth();
 const day = today.getDate();
 //returns the day of the month(from 0-31)
 
-if (Date >= 0/21 && Date <= 04/19) {
-    console.log ("Aries");
-} else if (Date >= 4/20 && Date <= 05/20) {
-    console.log("Taurus");
-} else if (Date >= 5/21 && Date <= 6/20) {
-    console.log("Gemini");
-} else if (Date >= 6/21 && Date <= 07/22) {
-    console.log("Cancer");
-} else if (Date >= 07/23 && Date <= 08/22) {
-    console.log("Leo"); 
-} else if (Date >= 08/23 && Date <= 09/22) {
-    console.log("Virgo");
-} else if (Date >= 09/23 && Date <= 10/22) {
-    console.log("Libra");
-} else if (Date >= 10/23 && Date <= 11/21) {
-    console.log("Scorpio");
-} else if (Date >= 11/22 && Date <= 12/21) {
-    console.log("Sagittarius");
-}  else if (Date >= 12/22 && Date <= 01/19) {
-    console.log("Capricorn");
-}  else if (Date >= 01/20 && Date <= 02/18) {
-    console.log("Aquarius") 
-}  else if (Date >= 01/20 && Date <= 02/18) {
-    console.log("Pisces")
+
+
+if (Date >= 0/21 && Date <= 3/19) {
+    console.log ("Aries").value;
+} else if (Date >= 3/20 && Date <= 4/20) {
+    console.log("Taurus").value;
+} else if (Date >= 4/21 && Date <= 5/20) {
+    console.log("Gemini").value;
+} else if (Date >= 5/21 && Date <= 6/22) {
+    console.log("Cancer").value;
+} else if (Date >= 6/23 && Date <= 7/22) {
+    console.log("Leo").value; 
+} else if (Date >= 7/23 && Date <= 8/22) {
+    console.log("Virgo").value;
+} else if (Date >= 8/23 && Date <= 9/22) {
+    console.log("Libra").value;
+} else if (Date >= 9/23 && Date <= 10/21) {
+    console.log("Scorpio").value;
+} else if (Date >= 10/22 && Date <= 11/21) {
+    console.log("Sagittarius").value;
+}  else if (Date >= 11/22 && Date <= 0/19) {
+    console.log("Capricorn").value;
+}  else if (Date >= 0/20 && Date <= 1/18) {
+    console.log("Aquarius").value; 
+}  else if (Date >= 1/20 && Date <= 2/18) {
+    console.log("Pisces").value;
 }
 
 
@@ -46,7 +48,7 @@ if (Date >= 0/21 && Date <= 04/19) {
 console.log("Month:", month, "Day:", day) ;
 
 
-
+console.log(value)
 }
 
 
