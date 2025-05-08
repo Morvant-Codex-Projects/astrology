@@ -43,10 +43,8 @@ if (Date >= 0/21 && Date <= 3/19) {
 }
 
 
-innerHTML("birthdaySubmitHandler(event)");
-
 console.log("Month:", month, "Day:", day) ;
-
+document.writeln(birthdaySubmitHandler(event));
 
 }
 
