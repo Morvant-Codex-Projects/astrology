@@ -3,26 +3,3 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #04050ffb;
-    text-align: left;
-    padding: 8px;
-    border: solid;
-    margin: 30px;
-  }
-  
-  tr:nth-child(even) {
-    background-color:rgba(203, 212, 147, 0.527);
-  }
-  tr:nth-child(odd) {
-    background-color:rgba(186, 212, 16, 0.527);
-  html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }

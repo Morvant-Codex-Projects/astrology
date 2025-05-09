@@ -1,6 +1,7 @@
 console.log("Hello")
 
 function birthdaySubmitHandler(event) {
+    
     event.preventDefault();
 
     console.log(event.target.birthday.value);
@@ -8,16 +9,20 @@ function birthdaySubmitHandler(event) {
 const today = new Date(event.target.birthday.value);
 //returns a new date Object with the requested date/time attached
 
-const month = today.getMonth();
+const month = today.getMonth(event);
 //returns the month from 0-11
 
-const day = today.getDate();
+const day = today.getDate(event);
 //returns the day of the month(from 0-31)
+
+
+document.addEventListener(birthdaySubmitHandler(event));
+document.writeln(console.log("").value)
 
 
 
 if (Date >= 0/21 && Date <= 3/19) {
-    console.log ("Aries").value;
+    console.log("Aries").value;
 } else if (Date >= 3/20 && Date <= 4/20) {
     console.log("Taurus").value;
 } else if (Date >= 4/21 && Date <= 5/20) {
@@ -43,8 +48,11 @@ if (Date >= 0/21 && Date <= 3/19) {
 }
 
 
+
+
+
 console.log("Month:", month, "Day:", day) ;
-document.writeln(birthdaySubmitHandler(event));
+
 
 }
 
