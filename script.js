@@ -17,7 +17,7 @@ const day = today.getDate(event);
 
 
 document.addEventListener(birthdaySubmitHandler(event));
-document.writeln(console.log("").value)
+
 
 
 
