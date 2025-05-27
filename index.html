@@ -5,34 +5,78 @@
       <a href="index.html">You Are Here</a>
       <a href="references.html">References</a>
     </nav>
-    <script src="script.js" defer></script>
+    
+<form>
+       <h1>Find Your Sign</h1>
+      <label for="birthday"></label>
+      <input type="date" id="birthday">
+
+      <div id="result"></div>
+
+    <script>
+
+// JavaScript logic to calculate zodiac sign goes here
+
+document.getElementById("birthday").addEventListener("change", function() {
+  let birthday = new Date(this.value);
+  let month = birthday.getMonth() + 1; // JavaScript months are 0-indexed
+  let day = birthday.getDate();
+
+  // Function to determine zodiac sign
+  function getZodiacSign(month, day) {
+    if ((month == 3 && day >= 21) || (month == 4 && day <= 19)) {
+      return "Aries";
+    } else if ((month == 4 && day >= 20) || (month == 5 && day <= 20)) {
+      return "Taurus";
+    } else if ((month == 5 && day >= 21) || (month == 6 && day <= 20)) {
+      return "Gemini";
+    } else if ((month == 6 && day >= 21) || (month == 7 && day <= 22)) {
+      return "Cancer";
+    } else if ((month == 7 && day >= 23) || (month == 8 && day <= 22)) {
+      return "Leo";
+    } else if ((month == 8 && day >= 23) || (month == 9 && day <= 22)) {
+      return "Virgo";
+    } else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
+      return "Libra";
+    } else if ((month == 10 && day >= 23) || (month == 11 && day <= 21)) {
+      return "Scorpio";
+    } else if ((month == 11 && day >= 22) || (month == 12 && day <= 21)) {
+      return "Sagittarius";
+    } else if ((month == 12 && day >= 22) || (month == 1 && day <= 19)) {
+      return "Capricorn";
+    } else if ((month == 1 && day >= 20) || (month == 2 && day <= 18)) {
+      return "Aquarius";
+    } else if ((month == 2 && day >= 19) || (month == 3 && day <= 20)) {
+      return "Pisces";
+    }
+  }
+
+  let zodiacSign = getZodiacSign(month, day);
+  document.getElementById("result").textContent = "Your zodiac sign is: " + zodiacSign;
+});
+    </script>
+    </form>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astrology Guide</title>
 
-    <form id= form onsubmit="birthdaySubmitHandler(event)">
-      <h1>Find Your Sign</h1>
-      <label for="birthday"></label>
-      <input type="date" id="birthday" name="birthday" />
-      <input type="submit" onsubmit="birthdaySubmitHandler(event)" />
-      <output onsubmit="birthdaySubmitHandler(EventTarget)"></output>
-      <br><br><br><br>
+     
+  
 
-      <nav>
-        <a href="Aries.html">Aries</a>
-        <a href="Taurus.html">Taurus</a>
-        <a href="Gemini.html">Gemini</a>
-        <a href="Cancer.html">Cancer</a>
-        <a href="Leo.html">Leo</a>
-        <a href="Virgo.html">Virgo</a>
-        <a href="Libra.html">Libra</a>
-        <a href="Scorpio.html">Scorpio</a>
-        <a href="Sagittarius.html">Sagittarius</a>
-        <a href="Capricorn.html">Capricorn</a>
-        <a href="Aquarius.html">Aquarius</a>
-        <a href="Pisces.html">Pisces</a>
-      </nav>
-    </form>
+    <nav>
+      <a href="Aries.html">Aries</a>
+      <a href="Taurus.html">Taurus</a>
+      <a href="Gemini.html">Gemini</a>
+      <a href="Cancer.html">Cancer</a>
+      <a href="Leo.html">Leo</a>
+      <a href="Virgo.html">Virgo</a>
+      <a href="Libra.html">Libra</a>
+      <a href="Scorpio.html">Scorpio</a>
+      <a href="Sagittarius.html">Sagittarius</a>
+      <a href="Capricorn.html">Capricorn</a>
+      <a href="Aquarius.html">Aquarius</a>
+      <a href="Pisces.html">Pisces</a>
+    </nav>
   </head>
 
   <body>
